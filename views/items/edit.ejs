@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title></title>
+		<% include ../partials/head.ejs%>
 	</head>
 	<body>
 		<header>
@@ -10,14 +9,7 @@
       <img src="<%=item.link%>"/>
       <%=item.body%>
 			<nav>
-				<ul>
-					<li>
-						<a href="/">Home</a>
-					</li>
-					<li>
-						<a href="/items">item Index</a>
-					</li>
-				</ul>
+				<%include ../partials/nav.ejs%>
 			</nav>
 		</header>
 		<main>
@@ -29,5 +21,6 @@
 				<input type="submit" value="Update Item"/>
 			</form>
 		</main>
+		<% include ../partials/footer.ejs%>
 	</body>
 </html>

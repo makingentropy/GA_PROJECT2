@@ -1,21 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8">
-		<title>item Site</title>
-    <link rel="stylesheet" href="css/style.css">
+		<% include ../partials/head.ejs%>
 	</head>
 	<body>
 		<header>
 			<h1>items</h1>
 			<nav>
-				<ul>
-					<li>
-						<a href="/">Home</a>
-					</li>
-					<li>
-						<a href="/items/new">Create a new item</a>
-					</li>
+				<% include ../partials/nav.ejs%>
 				</ul>
 			</nav>
 		</header>
@@ -31,5 +23,6 @@
 				<% } %>
 			</div>
 		</main>
+		<% include ../partials/footer.ejs%>
 	</body>
 </html>
