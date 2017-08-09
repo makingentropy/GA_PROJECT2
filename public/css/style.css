@@ -22,5 +22,27 @@ img{
 
 }
 body{
-  background-color: white;
+  background-color: #CCFFCC;
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-content: center;
+  text-align: center;
+}
+h1{
+  width:100%;
+  height:auto;
+  border: 1px solid #CCCCCC;
+}
+h2{
+  width:100%;
+  height:auto;
+  border: 1px solid #CCCCCC;
+}
+#navbar{
+  width:150px;
+  height: 150px;
+  width:150px;
+  height: 150px;
+  border: 1px solid #CCCCCC;
+  margin-left: 3px;
 }

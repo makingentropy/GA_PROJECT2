@@ -6,11 +6,12 @@
 	<body>
 		<header>
 			<h1>Edit <%=item.title%></h1>
+			<nav>
+				<% include ../partials/nav.ejs%>
+			</nav>
       <img src="<%=item.link%>"/>
       <%=item.body%>
-			<nav>
-				<%include ../partials/nav.ejs%>
-			</nav>
+
 		</header>
 		<main>
 			<h2>item Attributes:</h2>
