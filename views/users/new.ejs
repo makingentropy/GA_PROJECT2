@@ -9,14 +9,7 @@
 		<header>
 			<h1>Create a User</h1>
 			<nav>
-				<ul>
-					<li>
-						<a href="/">Home</a>
-					</li>
-					<li>
-						<a href="/users">Users Index</a>
-					</li>
-				</ul>
+				<% include ../partials/nav.ejs%>
 			</nav>
 		</header>
 		<main>
@@ -24,5 +17,6 @@
 				<input placeholder="name, press enter" type="text" name="name" />
 			</form>
 		</main>
+		<% include ../partials/footer.ejs%>
 	</body>
 </html>

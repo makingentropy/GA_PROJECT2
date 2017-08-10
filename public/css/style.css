@@ -1,13 +1,13 @@
-.lightBox{
+.containerBox{
   display: inline-flex;
   flex-wrap: wrap;
   align-content: center;
 }
-.photoBox{
-  width:150px;
+.itemBox{
+  /*width:150px;
   height: 150px;
   width:150px;
-  height: 150px;
+  height: 150px;*/
   border: 1px solid #CCCCCC;
   margin-left: 3px;
 }
@@ -19,7 +19,6 @@ img{
   height:90%;
   margin-left: 5%;
   margin-top: 10%;
-
 }
 body{
   font-family:Geneva, Arial, Helvetica, sans-serif;
@@ -28,6 +27,7 @@ body{
   flex-wrap: wrap;
   align-content: center;
   text-align: center;
+  width: 100%;
 }
 h1{
   width:100%;
@@ -39,11 +39,19 @@ h2{
   height:auto;
   border: 1px solid #CCCCCC;
 }
-#navbar{
-  width:150px;
-  height: 150px;
-  width:150px;
-  height: 150px;
+#footsie{
+  width: 100%;
   border: 1px solid #CCCCCC;
-  margin-left: 3px;
+}
+#navbar{
+  text-decoration: none;
+  padding-top:100px;
+  padding-right: 40px;
+  padding-bottom: 300px;
+  padding-left: 40px;
+  margin-right:100px;
+
+  align-self: flex-start;
+  border: 1px solid #CCCCCC;
+  border-radius: 10px;
 }

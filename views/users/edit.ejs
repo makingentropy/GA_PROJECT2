@@ -9,14 +9,7 @@
 		<header>
 			<h1>Edit <%=user.name%>'s Info</h1>
 			<nav>
-				<ul>
-					<li>
-						<a href="/">Home</a>
-					</li>
-					<li>
-						<a href="/users">Users Index</a>
-					</li>
-				</ul>
+				<% include ../partials/nav.ejs%>
 			</nav>
 		</header>
 		<main>
@@ -26,5 +19,6 @@
 				<input type="submit" value="Update User"/>
 			</form>
 		</main>
+		<% include ../partials/footer.ejs%>
 	</body>
 </html>

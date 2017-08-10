@@ -5,6 +5,12 @@
 	</head>
 	<body>
 		<header>
+			<nav>
+				<ul>
+					<% include ../partials/nav.ejs%>
+				</ul>
+			</nav>
+			<div>
 			<img src="<%=item.link%>"/><br>
       <%=item.body%>
       <br>
@@ -18,11 +24,7 @@
 			<section>
 			    <a href="/items/<%=item._id%>/edit">Edit</a>
 			</section>
-			<nav>
-				<ul>
-					<% include ../partials/nav.ejs%>
-				</ul>
-			</nav>
+		</div>
 		</header>
 		<main>
 			<!-- <%=user%> -->
