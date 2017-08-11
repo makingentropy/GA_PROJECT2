@@ -21,6 +21,7 @@ img{
   margin-top: 10%;
 }
 body{
+  text-decoration: none;
   font-family:Geneva, Arial, Helvetica, sans-serif;
   background-color: #CCFFCC;
   display: inline-flex;
@@ -40,8 +41,34 @@ h2{
   border: 1px solid #CCCCCC;
 }
 #footsie{
+  color: #86794A;
   width: 100%;
+  height:4.3em;
+  vertical-align: middle;
+  line-height: 1.0em;
   border: 1px solid #CCCCCC;
+  background-color: #34270C;
+}
+#floating-panel {
+  /*google maps*/
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+#growbin{
+
+}
+#map {
+  /*google maps*/
+    width: 400px;;
+    height: 400px;
+    background-color: grey;
+    margin: 20px;
 }
 #navbar{
   text-decoration: none;
@@ -54,4 +81,13 @@ h2{
   align-self: flex-start;
   border: 1px solid #CCCCCC;
   border-radius: 10px;
+}
+#topper{
+  color: #86794A;
+  width: 100%;
+  height:4.3em;
+  vertical-align: middle;
+  line-height: 1.0em;
+  border: 1px solid #CCCCCC;
+  background-color: #34270C;
 }

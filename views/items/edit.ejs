@@ -15,6 +15,7 @@
 
 		</header>
 		<main>
+			<% include ../partials/googlemaps.ejs%>
 			<h2>item Attributes:</h2>
 			<form action="/items/<%=item._id%>?_method=PUT" method="post">
 				<input placeholder="name" type="text" name="name" value="<%=item.name%>"/><br/>
