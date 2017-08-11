@@ -6,52 +6,49 @@
 	<body>
 		<header>
 			<% include ../partials/topper.ejs%>
-			<nav>
-				<ul>
-					<% include ../partials/nav.ejs%>
-				</ul>
-			</nav>
-			<div>
-			<img src="<%=item.link%>"/><br>
-      <%=item.body%>
-      <br>
-			by:
-			<a href="/users/<%=user._id%>"><%=user.name%></a>
-			<section>
-			    <form action="/items/<%=item._id%>?_method=DELETE" method="post">
-			        <input type="submit" value="Delete item"/>
-			    </form>
-			</section>
-			<section>
-			    <a href="/items/<%=item._id%>/edit">Edit</a>
-			</section>
-		</div>
 		</header>
-		<main>
-			<!-- <%=user%> -->
-			<section>
-				<h2>user Atrributes:</h2>
-				<ul>
-					<li>Name: <%=user.name%></li>
-				</ul>
-			</section>
-			<section>
-				<h2>items by This user:</h2>
-				<div class="containerBox">
+		<div id="navbar">
+			<% include ../partials/nav.ejs%>
+		</div>
+		<div id="maincontainer">
+			<div id="main_sub">
+					<div>
+						Entry name: <%=item.name%><br>
+						<img src="<%=item.link%>" alt=""/>
+						<br>
+			      Description: <%=item.body%>
+			      <br><br>
+						by:
+						<a href="/users/<%=user._id%>"><%=user.name%></a>
+						<br><br>
+						<section>
+						    <a href="/items/<%=item._id%>/edit">Edit entry</a>
+						</section>
+						<br>
+						<section>
+						    <form action="/items/<%=item._id%>?_method=DELETE" method="post">
+						        <input type="submit" value="Delete entry"/>
+						    </form>
+						</section>
+					</div>
+					<section>
+						<h2>Other entries by <%=user.name%>:</h2>
+						<div class="containerBox">
 
-					<% for(let i=0; i<user.items.length;i++){ %>
-						<div class="itemBox">
-							<div class="item">
-								<%=user.items[i].name%><br> ...
-								<a href="/items/<%=user.items[i].id%>">
-									<img src="<%=user.items[i].link%>" alt="<%=user.items[i].name%>"/>
-								</a>
-							</div>
+							<% for(let i=0; i<user.items.length;i++){ %>
+								<div class="itemBox">
+									<div class="item">
+										<a href="/items/<%=user.items[i].id%>">
+											<img src="<%=user.items[i].link%>" alt=""/>
+											<%=user.items[i].name%><br>
+										</a>
+									</div>
+								</div>
+							<%}%>
 						</div>
-					<%}%>
-				</div>
-			</section>
-		</main>
+					</section>
+			</div>
+		</div>
 		<% include ../partials/footer.ejs%>
 	</body>
 </html>

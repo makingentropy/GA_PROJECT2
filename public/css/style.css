@@ -69,9 +69,16 @@ h2{
   padding-left: 10px;
 }
 #growbin{
-  font-size: 3em;
+  font-size: 3.5em;
   font-weight: bold;
   text-align: left;
+  padding-top: 20px;
+}
+#growbinentry{
+  font-size: 5em;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 20px;
 }
 #maincontainer{
   align-items: stretch;
@@ -112,4 +119,12 @@ h2{
   line-height: 1.0em;
   border: 1px solid #CCCCCC;
   background-color: #E9E7B7;
+}
+#topperentry{
+  color: #C3CA80;
+  width: 100%;
+  height:4.3em;
+  vertical-align: middle;
+  line-height: 1.0em;
+  text-align:center;
 }

@@ -6,25 +6,27 @@
 	<body>
 		<header>
 			<% include ../partials/topper.ejs%>
-			<h1>Create an entry</h1>
-			<nav>
-				<% include ../partials/nav.ejs%>
-			</nav>
 		</header>
-		<main>
-			<form action="/items" method="POST">
-				<select name="userId">
-					<!-- name is the property that req.body will search for on POST -->
-					<%for(let i=0; i<users.length; i++){%>
-						<option value="<%=users[i].id%>"><%=users[i].name%></option>
-					<%}%>
-				</select><br>
-				<input placeholder="name" type="text" name="name"/><br/>
-        <input placeholder="link" type="text" name="link" /><br/>
-				<textarea placeholder="description" name="body"></textarea><br/>
-				<input type="submit" value="Publish item"/>
-			</form>
-		</main>
+		<div id="navbar">
+			<% include ../partials/nav.ejs%>
+		</div>
+		<div id="maincontainer">
+			<div id="main_sub">
+				<h1>Create an entry</h1>
+				<form action="/items" method="POST">
+					<select name="userId">
+						<!-- name is the property that req.body will search for on POST -->
+						<%for(let i=0; i<users.length; i++){%>
+							<option value="<%=users[i].id%>"><%=users[i].name%></option>
+						<%}%>
+					</select><br>
+					<input placeholder="name" type="text" name="name"/><br/>
+	        <input placeholder="link" type="text" name="link" /><br/>
+					<textarea placeholder="description" name="body"></textarea><br/>
+					<input type="submit" value="Publish item"/>
+				</form>
+			</div>
+		</div>
 		<% include ../partials/footer.ejs%>
 	</body>
 </html>
