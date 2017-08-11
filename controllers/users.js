@@ -24,6 +24,8 @@ router.get('/new', (req, res)=>{ //user creation page
 });
 
 router.delete('/:id', (req, res)=>{
+  console.log(req.params.id);
+  item.remove({idowner:req.params.id}); //argh...why no remove?
 	User.findByIdAndRemove(req.params.id, (err,foundUser)=>{
 				res.redirect('/users');
 	});

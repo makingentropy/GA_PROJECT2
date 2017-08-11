@@ -23,6 +23,8 @@ router.post('/', (req, res)=>{
 	item.create(req.body,(err,createdItem)=>{
 		User.findById(req.body.userId,(err,foundUser)=>{
       console.log(createdItem);
+			createdItem.idowner=foundUser._id;
+			console.log(createdItem);
       console.log(foundUser);
 			foundUser.items.push(createdItem); //this doesn't automatically save to database
 			foundUser.save((err,data)=>{ //this saves to database
