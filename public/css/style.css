@@ -23,20 +23,27 @@ img{
 body{
   text-decoration: none;
   font-family:Geneva, Arial, Helvetica, sans-serif;
-  background-color: #CCFFCC;
+  background-color: #E9E7B7;
   display: inline-flex;
   flex-wrap: wrap;
   align-content: center;
   text-align: center;
   width: 100%;
 }
-h1{
+head{
+  height:20%;
   width:100%;
+}
+main{
+  width:80%
+}
+h1{
+  /*width:100%;*/
   height:auto;
   border: 1px solid #CCCCCC;
 }
 h2{
-  width:100%;
+  /*width:100%;*/
   height:auto;
   border: 1px solid #CCCCCC;
 }
@@ -61,7 +68,9 @@ h2{
   padding-left: 10px;
 }
 #growbin{
-
+  font-size: 3em;
+  font-weight: bold;
+  text-align: left;
 }
 #map {
   /*google maps*/
@@ -72,22 +81,23 @@ h2{
 }
 #navbar{
   text-decoration: none;
-  padding-top:100px;
+  /*padding-top:100px;
   padding-right: 40px;
   padding-bottom: 300px;
   padding-left: 40px;
-  margin-right:100px;
+  margin-right:100px;*/
+  height:80%;
 
   align-self: flex-start;
   border: 1px solid #CCCCCC;
   border-radius: 10px;
 }
 #topper{
-  color: #86794A;
+  color: #C3CA80;
   width: 100%;
   height:4.3em;
   vertical-align: middle;
   line-height: 1.0em;
   border: 1px solid #CCCCCC;
-  background-color: #34270C;
+  background-color: #E9E7B7;
 }
