@@ -14,6 +14,9 @@
 .photo{
   align-content: center;
 }
+a{
+  text-decoration: none;
+}
 img{
   width:90%;
   height:90%;
@@ -24,13 +27,14 @@ body{
   text-decoration: none;
   font-family:Geneva, Arial, Helvetica, sans-serif;
   background-color: #E9E7B7;
-  display: inline-flex;
+  display: flex;
   flex-wrap: wrap;
   align-content: center;
   text-align: center;
   width: 100%;
 }
-head{
+header{
+
   height:20%;
   width:100%;
 }
@@ -51,7 +55,7 @@ h2{
   color: #86794A;
   width: 100%;
   height:4.3em;
-  vertical-align: middle;
+  align-self: flex-end;
   line-height: 1.0em;
   border: 1px solid #CCCCCC;
   background-color: #34270C;
@@ -72,6 +76,13 @@ h2{
   font-weight: bold;
   text-align: left;
 }
+#maincontainer{
+  height:80%;
+}
+#main_sub{
+
+
+}
 #map {
   /*google maps*/
     width: 400px;;
@@ -81,14 +92,9 @@ h2{
 }
 #navbar{
   text-decoration: none;
-  /*padding-top:100px;
-  padding-right: 40px;
-  padding-bottom: 300px;
-  padding-left: 40px;
-  margin-right:100px;*/
-  height:80%;
-
-  align-self: flex-start;
+  height:100%;
+  order:-1;
+  align-self: stretch;
   border: 1px solid #CCCCCC;
   border-radius: 10px;
 }

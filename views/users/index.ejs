@@ -6,21 +6,22 @@
 	<body>
 		<header>
 			<% include ../partials/topper.ejs%>
-			<h1>Users</h1>
-			<nav>
-				<% include ../partials/nav.ejs%>
-			</nav>
 		</header>
-		<main>
-			<h2>List of Users</h2>
-			<ul>
-				<% for(let i = 0; i < users.length; i++){ %>
-					<li>
-						<a href="/users/<%=users[i]._id%>"><%=users[i].name%></a>
-					</li>
-				<% } %>
-			</ul>
-		</main>
+		<div id="maincontainer">
+			<div id="navbar">
+				<% include ../partials/nav.ejs%>
+			</div>
+			<div id="main_sub">
+				<h2>List of Users</h2>
+				<ul>
+					<% for(let i = 0; i < users.length; i++){ %>
+						<li>
+							<a href="/users/<%=users[i]._id%>"><%=users[i].name%></a>
+						</li>
+					<% } %>
+				</ul>
+			</div>
+		</div>
 		<% include ../partials/footer.ejs%>
 	</body>
 </html>
