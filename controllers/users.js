@@ -25,11 +25,12 @@ router.get('/new', (req, res)=>{ //user creation page
 
 router.delete('/:id', (req, res)=>{
   console.log(req.params.id);
-  item.remove({idowner:req.params.id}); //argh...why no remove?
-	User.findByIdAndRemove(req.params.id, (err,foundUser)=>{
-				res.redirect('/users');
-	});
-});
+  item.remove({idowner:req.params.id},(err, foundUser)=>{ //argh...why no remove?
+	   User.findByIdAndRemove(req.params.id, (err,foundUser)=>{
+				   res.redirect('/users');
+	        });
+        });
+  });
 
 router.get('/:id/edit', (req, res)=>{  //go to edit page of user
 	User.findById(req.params.id, (err, foundUser)=>{
