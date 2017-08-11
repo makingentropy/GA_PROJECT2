@@ -6,18 +6,20 @@
 	<body>
 		<header>
 			<% include ../partials/topper.ejs%>
-			<h1>Edit <%=user.name%>'s Info</h1>
-			<nav>
-				<% include ../partials/nav.ejs%>
-			</nav>
 		</header>
-		<main>
-			<h2>User Attributes:</h2>
-			<form action="/users/<%=user._id%>?_method=PUT" method="post">
-				<input type="text" name="name" value="<%=user.name%>"/><br/>
-				<input type="submit" value="Update User"/>
-			</form>
-		</main>
+		<div id="navbar">
+			<% include ../partials/nav.ejs%>
+		</div>
+		<div id="maincontainer">
+			<div id="main_sub">
+				<h1>Edit <%=user.name%>'s Info</h1>
+				<h2>User Name:</h2>
+				<form action="/users/<%=user._id%>?_method=PUT" method="post">
+					<input type="text" name="name" value="<%=user.name%>"/><br/>
+					<input type="submit" value="Update User"/>
+				</form>
+			</div>
+		</div>
 		<% include ../partials/footer.ejs%>
 	</body>
 </html>
