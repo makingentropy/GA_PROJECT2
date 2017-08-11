@@ -6,16 +6,18 @@
 	<body>
 		<header>
 			<% include ../partials/topper.ejs%>
-			<h1>Create a User</h1>
-			<nav>
-				<% include ../partials/nav.ejs%>
-			</nav>
 		</header>
-		<main>
-			<form action="/users" method="post">
-				<input placeholder="name, press enter" type="text" name="name" />
-			</form>
-		</main>
+		<div id="navbar">
+			<% include ../partials/nav.ejs%>
+		</div>
+		<div id="maincontainer">
+			<div id="main_sub">
+				<h1>Create a User</h1>
+				<form action="/users" method="post">
+					<input placeholder="name, press enter" type="text" name="name" />
+				</form>
+			</div>
+		</div>
 		<% include ../partials/footer.ejs%>
 	</body>
 </html>

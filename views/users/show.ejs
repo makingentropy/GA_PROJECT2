@@ -6,30 +6,32 @@
 	<body>
 		<header>
 			<% include ../partials/topper.ejs%>
-			<h1>Show Page for <%=user.name%></h1>
-			<nav>
-				<% include ../partials/nav.ejs%>
-			</nav>
 		</header>
-		<main>
-			<section>
-				<h2>Name: <%=user.name%></h2>
-			</section>
-			<section>
-          <h2>Items owned by <%=user.name%>:</h2>
-          <ul>
+		<div id="navbar">
+			<% include ../partials/nav.ejs%>
+		</div>
+		<div id="maincontainer">
+			<div id="main_sub">
 
-          </ul>
-      </section>
-			<section>
-				<a href="/users/<%=user._id%>/edit">Edit</a>
-			</section>
-            <section>
-				<form action="/users/<%=user._id%>?_method=DELETE" method="POST">
-					<input type="submit" value="Delete User"/>
-				</form>
-			</section>
-		</main>
+				<h1>Show Page for <%=user.name%></h1>
+				<!-- <h2>Name: <%=user.name%></h2> -->
+
+
+	          <h2>Items owned by <%=user.name%>:</h2>
+	          <ul>
+
+	          </ul>
+
+
+					<a href="/users/<%=user._id%>/edit">Edit Username</a>
+
+
+					<form action="/users/<%=user._id%>?_method=DELETE" method="POST">
+						<input type="submit" value="Delete User"/>
+					</form>
+
+			</div>
+		</div>
 		<% include ../partials/footer.ejs%>
 	</body>
 </html>
