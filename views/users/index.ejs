@@ -12,6 +12,8 @@
 		</div>
 		<div id="maincontainer">
 			<div id="main_sub">
+				<a href="/users/new">Create a new user</a>
+				<br><br>
 				<h2>List of Users</h2>
 				<ul>
 					<% for(let i = 0; i < users.length; i++){ %>
@@ -20,6 +22,7 @@
 						</li>
 					<% } %>
 				</ul>
+				<br>
 			</div>
 		</div>
 		<% include ../partials/footer.ejs%>
