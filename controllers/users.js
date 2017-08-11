@@ -16,7 +16,9 @@ router.post('/', (req, res)=>{
 		res.redirect('/users');
 	});
 });
-
+router.get('/about', (req, res)=>{ //site about page
+	res.render('users/about.ejs');
+});
 router.get('/new', (req, res)=>{ //user creation page
 	res.render('users/new.ejs');
 });

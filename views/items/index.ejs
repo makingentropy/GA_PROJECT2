@@ -15,16 +15,17 @@
 		</div>
 		<div id="maincontainer">
 			<div id="main_sub">
-				<h1>All entries by all users</h1>
+				<a class="make_new" href="/items/new">Create new entry</a>
+				<br>
+				<h1>All entries by all users:</h1>
 				<div class="containerBox">
 					<% for(let i = 0; i < items.length; i++){ %>
 						<div class="itemBox">
-							<div class="item">
+							<div class="displaylist" class="item">
 								<a href="/items/<%=items[i]._id%>"><img src="<%=items[i].link%>" alt=""/>
 									<%=items[i].name%><br>
 								</a>
 								<br>
-
 							</div>
 						</div>
 					<% } %>

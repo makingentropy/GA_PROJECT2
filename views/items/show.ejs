@@ -12,15 +12,17 @@
 		</div>
 		<div id="maincontainer">
 			<div id="main_sub">
-					<div>
+					<div id="allinfo">
 						Entry name: <%=item.name%><br>
 						<img src="<%=item.link%>" alt=""/>
 						<br>
-			      Description: <%=item.body%>
+			      Description : <%=item.body%>
 			      <br><br>
-						by:
-						<a href="/users/<%=user._id%>"><%=user.name%></a>
+						by : <a href="/users/<%=user._id%>"><%=user.name%></a>
 						<br><br>
+						Comments : <%=item.comments%>
+					</div>
+						<br><br><br>
 						<section>
 						    <a href="/items/<%=item._id%>/edit">Edit entry</a>
 						</section>
@@ -28,12 +30,12 @@
 						<section>
 						    <form action="/items/<%=item._id%>?_method=DELETE" method="post">
 						        <input type="submit" value="Delete entry"/>
+										<br><br>
 						    </form>
 						</section>
-					</div>
 					<section>
 						<h2>Other entries by <%=user.name%>:</h2>
-						<div class="containerBox">
+						<div class="containerBox , displaylist">
 
 							<% for(let i=0; i<user.items.length;i++){ %>
 								<div class="itemBox">

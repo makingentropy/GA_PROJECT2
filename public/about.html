@@ -12,17 +12,9 @@
 		</div>
 		<div id="maincontainer">
 			<div id="main_sub">
-				<a class="make_new" href="/users/new">Create a new user</a>
-				<br><br>
-				<h2>List of All Users:</h2>
-
-					<% for(let i = 0; i < users.length; i++){ %>
-						<div class="displaylist" class="item">
-							<a href="/users/<%=users[i]._id%>"><%=users[i].name%></a>
-						</div>
-					<% } %>
-
-				<br>
+        This is a site where people can post what kind of seeds they have and write about their
+        experiences growing them in their area.  Ideally this would be so that others can decide
+        whether they would want to grow them, or perhaps even trade seeds in a future version.
 			</div>
 		</div>
 		<% include ../partials/footer.ejs%>

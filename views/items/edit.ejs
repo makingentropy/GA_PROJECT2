@@ -15,12 +15,13 @@
 				<h2>Edit Entry: <%=item.name%></h2>
 	      <img src="<%=item.link%>"/>
 	      Description: <%=item.body%>
-				<% include ../partials/googlemaps.ejs%>
+				<!-- include ../partials/googlemaps.ejs-->
 				<h2>entry Attributes:</h2>
 				<form action="/items/<%=item._id%>?_method=PUT" method="post">
 					<input placeholder="name" type="text" name="name" value="<%=item.name%>"/><br/>
 					<input placeholder="link" type="text" name="link" value="<%=item.link%>"/><br/>
 					<textarea placeholder="description" name="body"><%=item.body%></textarea><br/>
+					<textarea placeholder="comments" name="comments"><%=item.comments%></textarea><br/>
 					<input type="submit" value="Update Item"/>
 				</form>
 			</div>

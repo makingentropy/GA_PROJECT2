@@ -1,7 +1,11 @@
+
 .containerBox{
   display: inline-flex;
   flex-wrap: wrap;
   align-content: center;
+}
+.displaylist{
+  background-color: rgba(255,215,150,0.40);
 }
 .itemBox{
   /*width:150px;
@@ -11,10 +15,15 @@
   border: 1px solid #CCCCCC;
   margin-left: 3px;
 }
+.make_new{
+  font-size: 1.5em;
+  font-family: 'Gloria Hallelujah', cursive;
+}
 .photo{
   align-content: center;
 }
 a{
+  color: #3333FF;
   text-decoration: none;
 }
 img{
@@ -25,7 +34,8 @@ img{
 }
 body{
   text-decoration: none;
-  font-family:Geneva, Arial, Helvetica, sans-serif;
+  font-family: 'Indie Flower', cursive;
+  /*font-family:Geneva, Arial, Helvetica, sans-serif;*/
   background-color: #E9E7B7;
   display: flex;
   flex-wrap: wrap;
@@ -40,13 +50,21 @@ header{
 }
 h1{
   /*width:100%;*/
+  font-family: 'Gloria Hallelujah', cursive;
   height:auto;
   border: 1px solid #CCCCCC;
 }
 h2{
   /*width:100%;*/
+  font-family: 'Gloria Hallelujah', cursive;
   height:auto;
   border: 1px solid #CCCCCC;
+}
+#allinfo{
+  margin-top: 5%;
+  margin-left: 10%;
+  width:80%;
+  background-color: rgba(215,215,215,0.40);
 }
 #footsie{
   color: #86794A;
@@ -69,12 +87,14 @@ h2{
   padding-left: 10px;
 }
 #growbin{
+  font-family: 'Kavoon', cursive;
   font-size: 3.5em;
   font-weight: bold;
   text-align: left;
   padding-top: 20px;
 }
 #growbinentry{
+  font-family: 'Kavoon', cursive;
   font-size: 5em;
   font-weight: bold;
   text-align: center;

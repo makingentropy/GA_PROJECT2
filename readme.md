@@ -16,10 +16,10 @@ ejs <br>
 method-overide <br>
 geocoder <br>
 
-[heroku live link]https://seedtraderheroku.herokuapp.com/
+[heroku live link] https://seedtraderheroku.herokuapp.com/
 
 ## description
 
 This is a site where people can post what kind of seeds they have and write about their
 experiences growing them in their area.  Ideally this would be so that others can decide
-whether they would want to grow them, or perhaps even trade seeds.
+whether they would want to grow them, or perhaps even trade seeds in a future version.

@@ -18,6 +18,7 @@ app.get("/",(req,res)=>{
   res.render("index.ejs");
 })
 
+
 const mongoUri=process.env.MONGODB_URI || "mongodb://localhost:27017/project2"
 mongoose.connect(mongoUri);
 
